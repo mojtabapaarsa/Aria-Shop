@@ -1,0 +1,20 @@
+$primary-color:#f60343;
+$font-family:iran yekan;
+$font-size:16px;
+$border-radius: 7px;
+$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+
+
+
+// Mixins
+@mixin flex ($flex:flex , $justify-content:center , $align-items:center) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+.owl-carousel .owl-stage-outer {
+    border-radius: 10px;
+}
+.modal{
+    z-index: 99999999 !important;
+}

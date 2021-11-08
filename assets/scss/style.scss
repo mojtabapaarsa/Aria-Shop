@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'navbar';
+@import 'top-banner';
+@import 'services';
+@import 'special-offers';
+@import 'products';
+@import 'information';
+@import 'brands';
+@import 'mag';
+@import 'footer';
+@import 'scrollTop';
+@import 'breadcrumb';
+@import 'post';
+@import 'contact';
+
+@font-face {
+    font-family: iran yekan;
+    src: url('../fonts/iranyekanwebregular.ttf') format('truetype'),
+         url('../fonts/iranyekanwebregular.eot') format('eot'),
+         url('../fonts/iranyekanwebregular.woff') format('woff'),
+         url('../fonts/iranyekanwebregular.woff2') format('woff')
+}
+// Variables
+
+
+a , a:hover{
+    text-decoration: none;
+}
+ul , li{
+    list-style-type: none;
+}
+body{
+    font-family: iran yekan , sans-serif;
+    direction: rtl;
+    background-color: #f5f5f5;
+}
+
+.banner-fluid{
+    margin-top: 30px;
+    border-radius: 10px;
+
+    img{
+        border-radius: 10px;
+    }
+}
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1346px !important;
+    }
+}
+.place-right{
+    &::placeholder{
+        text-align: right !important;
+    }
+}

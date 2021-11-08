@@ -1,0 +1,35 @@
+.information{
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    padding: 15px 10px;
+
+    .info-title{
+        text-align: center;
+        font-size: $font-size + 3px;
+        color: #656565;
+        margin-bottom: 20px;
+    }
+    .info-item{
+        @include flex(flex , center , center);
+        flex-direction: column;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: box-shadow .3s ease-in;
+        &:hover{
+            box-shadow: $box-shadow;
+            
+        }
+        svg{
+            color: $primary-color;
+            font-size: $font-size + 5px;
+            margin-bottom: 10px;
+        }
+        a{
+            color: #999;
+            font-size: $font-size - 2px;
+            font-weight: 100;
+        }
+    }
+}

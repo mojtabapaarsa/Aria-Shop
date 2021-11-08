@@ -1,0 +1,158 @@
+#special-offers {
+    background-color: #ef394f;
+    min-height: 200px;
+    position: relative;
+
+    .special-offers {
+        padding-top: 20px;
+
+        .special-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            h5 {
+                color: #fff;
+
+                svg {
+                    vertical-align: -7px;
+                }
+            }
+
+            .special-offer-btn {
+                border: 1px solid #fff;
+                color: #fff;
+                margin-right: auto;
+                border-radius: 7px;
+                outline: none;
+                box-shadow: none;
+
+                svg {
+                    vertical-align: -4px;
+                }
+
+                &:hover {
+                    border: 1px solid rgb(212, 212, 212);
+                    color: #fff;
+                }
+            }
+        }
+
+        .special-body {
+            padding: 20px 0;
+
+            .special-offer-card {
+                border-radius: 10px;
+                max-height: 450px;
+
+                .card-img {
+                    padding: 21px 10px;
+                    position: relative;
+
+                    .off-percent {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        background-color: $primary-color;
+                        padding: 1px 10px;
+                        color: #fff;
+                        border-radius: 20px;
+                        font-family: b yekan;
+                    }
+                }
+
+                .card-body {
+
+                    .special-card-title {
+                        margin-bottom: 40px;
+
+
+                        h6 {
+                            color: #444;
+                            font-size: 13px;
+                            overflow: hidden;
+
+                            a {
+                                color: #444;
+                                font-family: dana;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                            }
+                        }
+                    }
+
+                    .special-card-price {
+                        text-align: left;
+                        font-family: b yekan;
+
+                        .last-price {
+                            color: #777;
+                            font-size: 16px;
+                            text-decoration: line-through;
+                        }
+
+                        p {
+                            color: $primary-color;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-carousel .owl-dots.disabled,
+    .owl-carousel .owl-nav.disabled {
+        display: block;
+
+    }
+
+    .owl-carousel button.owl-dot {
+        position: absolute;
+        background-color: rgba(256, 256, 256, .9);
+        color: rgb(92, 91, 91);
+        border: none;
+        padding: 0 !important;
+        font-size: 46px;
+        display: flex;
+        justify-content: space-between;
+        top: 143px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        font-size: 40px;
+        padding: 2px 10px;
+        top: 173px;
+        width: 20px;
+        background-color: rgba(256, 256, 256, .9);
+        box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .3);
+        color: #888;
+
+        &:hover{
+            color: #333;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: 1px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        border-radius: 5px 0px 0px 5px;
+        right: 1px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #special-offers {
+        background-color: #ef394f;
+        min-height: 350px;
+        position: relative;
+    }
+}
